@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+         table {background-color: yellow;width:700px ;height:250px ;}
+         td {color: blue;}     
+        </style>   
+    </head>
     <body>
+    <form action="index2.html" method="get">
         <table>
-            <caption>ĐĂNG KÍ HỌC VIÊN</caption>
+            <tr>
+            <td colspan="2" style="background-color: aquamarine ; 
+            align-content: stretch;font-weight: bold;">ĐĂNG KÝ HỌC VIÊN</td> 
+            </tr>
+            
             <tr>
                 <td>Họ và Tên</td>     
                 <td> <input type = "text" name="Họ và Tên"> </td>           
@@ -13,13 +24,41 @@
             </tr>
             <tr>
                 <td>Giới tính</td>
-                <td><label><input type= "radio" name= "gender" value ="Nam"> Nam </label></td>
-                    <td><label><input type= "radio" name= "gender" value ="Nữ"> Nữ </label></td>
+                <td><label><input type= "radio" name= "gender" value ="Nam"> Nam </label>
+                    <label><input type= "radio" name= "gender" value ="Nữ"> Nữ </label></td>
+            
             </tr>
             <tr>
                <td>Địa chỉ</td>
-               <td><input type = "</td>
+               <td> <textarea name="adress" id="adress" cols="25" rows="3"></textarea> </td>
             </tr>
+            <tr>
+                <td>Lớp</td>
+                <td>
+                <select>
+                 <option value=" ">Chọn lớp</option>   
+                 <option> </option>
+                </select>
+                </td>
+            </tr>   
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="number" name ="điện thoại"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="submit" value="Đăng kí" />
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+
+                  
+            
         </table>
+    </form>
     </body>
 </html>
